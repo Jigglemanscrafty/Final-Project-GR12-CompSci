@@ -1,2 +1,6 @@
-# Final-Project-GR12-CompSci
-This is the final assignment for grade 12 computer science, the Capstone Project. It is a relationship advisor ai chatbot called "aiCounsel". It uses Streamlit and Ollama.
+# aiCounsel
+
+This is a relationship advisor created for the Capstone Project, grade 12 computer science final project. It is called aiCounsel and uses streamlit for its web execution and ollama for its ai chatbot which advises the user.
+
+## Requirements
+
