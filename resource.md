@@ -4,7 +4,7 @@
 
 1. Give me code to add to my streamlit app to give me a pink-black gradient background, white text and a warm, cursive like but readable font for my headers.
 
-# Ai Responses
+# Ai Responses (see code tab for easier time reading code below)
 
 1. "st.markdown(
     """
