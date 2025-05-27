@@ -4,4 +4,5 @@ This is a relationship advisor created for the Capstone Project, grade 12 comput
 
 ## Requirements
 
-pip install -r requirements.txt
+Windows: python -m pip freeze > requirements.txt
+Mac: python3 -m pip freeze > requirements.txt
