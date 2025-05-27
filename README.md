@@ -4,3 +4,4 @@ This is a relationship advisor created for the Capstone Project, grade 12 comput
 
 ## Requirements
 
+pip install -r requirements.txt
