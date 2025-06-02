@@ -69,4 +69,13 @@
     unsafe_allow_html=True
 )"
 
-2. 
+2. else:
+            prompt = (
+                f"You are a helpful and context-aware relationship advisor. The user is asking about a "
+                f"{st.session_state.relationshipType.lower()} relationship. Only respond in the context of "
+                f"{st.session_state.relationshipType.lower()} relationships, and do not interpret the question as "
+                f"belonging to any other type of relationship.\n\n"
+                f"User's Question: {userInput}\n\n"
+                f"Your task: Provide thoughtful, respectful, and helpful advice relevant to that specific context only."
+                f"Deny: Requests that are either inappropriate, or deemed irrelevant to the relationship type."
+            )
