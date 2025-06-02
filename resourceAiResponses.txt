@@ -79,3 +79,18 @@
                 f"Your task: Provide thoughtful, respectful, and helpful advice relevant to that specific context only."
                 f"Deny: Requests that are either inappropriate, or deemed irrelevant to the relationship type."
             )
+
+3. response = conversation.run(prompt)
+            st.markdown("**Advice:**")
+            st.write(response)
+
+            message_pair = {"user": userInput, "ai": response}
+            history_file = f"conversation_{st.session_state.username}.json"
+            if os.path.exists(history_file):
+                with open(history_file, "r") as f:
+                    data = json.load(f)
+            else:
+                data = []
+            data.append(message_pair)
+            with open(history_file, "w") as f:
+                json.dump(data, f)
