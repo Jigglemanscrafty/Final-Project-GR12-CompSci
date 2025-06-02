@@ -9,3 +9,5 @@
 2. Give me code to provide guidelines for my Ollama chatbot to prevent it from providing bad, dangerous or irrelevvant advice.
 
 3. Give me code to save the users chathistory in a json memory file, based on the username they entered at the start.
+
+4. Give me code to establish a json memory file to be saved to later on, based on a username entered.
