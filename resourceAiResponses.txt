@@ -94,3 +94,16 @@
             data.append(message_pair)
             with open(history_file, "w") as f:
                 json.dump(data, f)
+
+4. def load_memory(username):
+    filename = f"conversation_{username}.json"
+    if os.path.exists(filename):
+        with open(filename, "r") as f:
+            past_messages = json.load(f)
+        memory = ConversationBufferMemory()
+        for msg in past_messages:
+            memory.chat_memory.add_user_message(msg["user"])
+            memory.chat_memory.add_ai_message(msg["ai"])
+        return memory
+    else:
+        return ConversationBufferMemory()
